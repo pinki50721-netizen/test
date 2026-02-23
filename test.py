@@ -51,3 +51,4 @@ print(dic4)
 #dic1에 'name' 키 속성이 있는지 확인(in)
 #p.101
 print('name' in dic1)
+print('addr' in dic4)
