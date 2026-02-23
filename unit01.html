@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<script>
+function getNum(){
+  return new Promise((resolve)=>{
+    setTimeout(function(){
+      let n=Math.floor(Math.random()*10);
+      resolve(n);
+  },3000);
+  })
+}
+
+// getNum().then((num)=>{
+//   alert(num);
+// })
+
+async function name() {
+  let a=await getNum();
+  alert(a);  
+}
+
+</script>
+
+</body>
+
+</html>
